@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BeadservService} from './beadserv.service';
+import { BeadservService } from './beadserv.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ export class AppComponent {
 
   constructor(public service: BeadservService) {
   }
+
   logout(): void{
     this.service.isLogged = false;
   }

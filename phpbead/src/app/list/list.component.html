@@ -1,24 +1,27 @@
 <div class="keret">
   <table class="table table-dark table-striped">
+
     <thead>
-    <tr>
-      <th class="card-columns">Name</th>
-      <th class="card-columns">Status</th>
-      <th class="card-columns">Species</th>
-      <th class="card-columns">Gender</th>
-      <th class="card-columns">Szerk.</th>
-      <th class="card-columns">Törlés</th>
-    </tr>
+      <tr>
+        <th class="card-columns">Name</th>
+        <th class="card-columns">Status</th>
+        <th class="card-columns">Species</th>
+        <th class="card-columns">Gender</th>
+        <th class="card-columns">Szerk.</th>
+        <th class="card-columns">Törlés</th>
+      </tr>
     </thead>
+
     <tbody>
-    <tr *ngFor="let adat of service.adatok">
-      <td class="card-columns">{{adat.name}}</td>
-      <td class="card-columns">{{adat.status}}</td>
-      <td class="card-columns">{{adat.species}}</td>
-      <td class="card-columns">{{adat.gender}}</td>
-      <td class="card-columns"><button class="btn btn-light" routerLink="/form" routerLinkActive="Active" (click)="edit(adat)">Szerkesztés</button></td>
-      <td class="card-columns"><button class="btn btn-outline-light" (click)="delete(adat)">Törlés</button></td>
-    </tr>
+      <tr *ngFor="let adat of service.adatok">
+        <td class="card-columns">{{adat.name}}</td>
+        <td class="card-columns">{{adat.status}}</td>
+        <td class="card-columns">{{adat.species}}</td>
+        <td class="card-columns">{{adat.gender}}</td>
+        <td class="card-columns"><button class="btn btn-light" routerLink="/form" routerLinkActive="Active" (click)="edit(adat)">Szerkesztés</button></td>
+        <td class="card-columns"><button class="btn btn-outline-light" (click)="delete(adat)">Törlés</button></td>
+      </tr>
     </tbody>
+
   </table>
 </div>

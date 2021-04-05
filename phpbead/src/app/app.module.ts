@@ -8,7 +8,7 @@ import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

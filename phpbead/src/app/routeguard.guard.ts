@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
-import {BeadservService} from './beadserv.service';
-import {Router} from '@angular/router';
+import { BeadservService } from './beadserv.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'

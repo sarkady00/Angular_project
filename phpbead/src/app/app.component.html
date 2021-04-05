@@ -1,9 +1,10 @@
 <div class="jobb">
-  <button class="btn btn-dark" routerLink="list"> List </button>
-  <button class="btn btn-dark" routerLink="form"> Form </button>
+  <button style="margin-right: 5px" class="btn btn-dark" routerLink="list"> List </button>
+  <button style="margin-right: 5px" class="btn btn-dark" routerLink="form"> Form </button>
   <button class="btn btn-danger" routerLink="login" *ngIf="!service.isLogged"> Login </button>
   <button class="btn btn-danger" routerLink="login" (click)="logout()" *ngIf="service.isLogged"> Log out </button>
 </div>
+
 <div class="container align-content-center">
   <router-outlet></router-outlet>
 </div>

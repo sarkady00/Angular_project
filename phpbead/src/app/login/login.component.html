@@ -1,23 +1,23 @@
 <form [formGroup]="form" (ngSubmit)="submitForm()">
   <div class="keret">
     <div class="kozepre">
-      <label for="username">Felhasználó név</label>
+      <label style="font-weight: bold" for="username">Felhasználó név</label>
       <div class="boxkozep">
         <input type="text" class="form-control mb-1" [formControlName]="'username'" name="username" id="username" placeholder="Enter username" required [(ngModel)]="data.username">
       </div>
       <div class="warning">
-        <div *ngIf="form.get('username').touched && form.get('username').errors?.required">Username is required</div>
+        <div *ngIf="form.get('username')?.touched && form.get('username')?.errors?.required">Username is required</div>
       </div>
 
-      <label class="mt-1" for="pwd">Jelszó</label>
+      <label style="font-weight: bold" class="mt-1" for="pwd">Jelszó</label>
       <div class="boxkozep">
         <input type="password" id="pwd" name="pwd" class="form-control mb-1" [formControlName]="'password'" placeholder="Enter password" [(ngModel)]="data.password">
       </div>
       <div class="warning">
-        <div *ngIf="form.get('password').touched && form.get('password').errors?.required"> Password is required </div>
+        <div *ngIf="form.get('password')?.touched && form.get('password')?.errors?.required"> Password is required </div>
       </div>
 
-      <button [disabled]="!form.valid" type="submit">Login</button>
+      <button class="btn btn-danger" [disabled]="!form.valid" type="submit">Login</button>
     </div>
   </div>
 </form>

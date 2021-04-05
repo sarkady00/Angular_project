@@ -1,11 +1,11 @@
-export class Logindata{
-  username: string;
-  password: string;
+export class MyAdat {
+  name: string | undefined;
+  status: number | undefined;
+  species: number | undefined;
+  gender: string | undefined;
 }
 
-export class MyAdat {
-  name: string;
-  status: number;
-  species: number;
-  gender: string;
+export class Logindata{
+  username: string | undefined;
+  password: string | undefined;
 }

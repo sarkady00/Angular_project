@@ -1,38 +1,50 @@
-
-
 <form [formGroup]="editform">
   <div class="keret">
     <div class="kozepre">
+
       <div class="form-group">
-        <label for="nameinput">Name</label>
+        <label style="font-weight: bold" for="nameinput">Name</label>
         <div class="boxkozep">
           <input type="text" class="form-control" [formControlName]="'name'" name="nameinput" id="nameinput" placeholder="Enter name" [(ngModel)]="adat.name">
         </div>
+        <div class="warning">
+          <div *ngIf="editform.get('name')?.touched && editform.get('name')?.errors?.required">Name is required</div>
+        </div>
       </div>
 
 
       <div class="form-group">
-        <label for="statusinput" class="mt-1">Status</label>
+        <label style="font-weight: bold" for="statusinput" class="mt-1">Status</label>
         <div class="boxkozep">
-          <input type="number" class="form-control" [formControlName]="'status'" name="statusinput" id="statusinput" placeholder="Enter the status of the character" [(ngModel)]="adat.status">
+          <input type="text" class="form-control" [formControlName]="'status'" name="statusinput" id="statusinput" placeholder="Enter the status of the character" [(ngModel)]="adat.status">
+        </div>
+        <div class="warning">
+          <div *ngIf="editform.get('status')?.touched && editform.get('status')?.errors?.required">Status is required</div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="speciesinput" class="mt-1">Species</label>
+        <label style="font-weight: bold" for="speciesinput" class="mt-1">Species</label>
         <div class="boxkozep">
-          <input type="number" class="form-control" [formControlName]="'species'" name="speciesinput" id="speciesinput" placeholder="Enter the species of the character" [(ngModel)]="adat.species">
+          <input type="text" class="form-control" [formControlName]="'species'" name="speciesinput" id="speciesinput" placeholder="Enter the species of the character" [(ngModel)]="adat.species">
+        </div>
+        <div class="warning">
+          <div *ngIf="editform.get('species')?.touched && editform.get('species')?.errors?.required">Species is required</div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="genderinput" class="my-1">Gender</label>
+        <label style="font-weight: bold" for="genderinput" class="my-1">Gender</label>
         <div class="boxkozep">
           <input type="text" class="form-control" [formControlName]="'gender'" name="genderinput" id="genderinput" placeholder="Gender of the character" [(ngModel)]="adat.gender">
+        </div>
+        <div class="warning">
+          <div *ngIf="editform.get('gender')?.touched && editform.get('gender')?.errors?.required">Gender is required</div>
         </div>
       </div>
 
       <button type="submit" class="btn btn-danger my-2" [disabled]="!editform.valid" (click)="save()">Submit</button>
+
     </div>
   </div>
 </form>

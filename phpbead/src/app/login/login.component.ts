@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Logindata} from '../adat.model';
-import {FormGroup, FormBuilder} from '@angular/forms';
-import {Validators} from '@angular/forms';
-import { BeadservService} from '../beadserv.service';
-import { Router} from '@angular/router';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { Validators } from '@angular/forms';
+import { BeadservService } from '../beadserv.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +11,8 @@ import { Router} from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  data = new Logindata();
   form: FormGroup;
+  data = new Logindata();
 
   constructor(
     private readonly  fb: FormBuilder,
