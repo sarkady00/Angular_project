@@ -13,12 +13,14 @@
     </thead>
 
     <tbody>
-      <tr *ngFor="let adat of service.adatok">
+      <tr *ngFor="let adat of service.adatok"> <!-- kiíratjuk az összes adatot az ngFor-ra -->
         <td class="card-columns">{{adat.name}}</td>
         <td class="card-columns">{{adat.status}}</td>
         <td class="card-columns">{{adat.species}}</td>
         <td class="card-columns">{{adat.gender}}</td>
+        <!-- szerkesztés gomra kattintva átvisz minket a form page-re és betölti oda a megfelelő karakter adatait -->
         <td class="card-columns"><button class="btn btn-light" routerLink="/form" routerLinkActive="Active" (click)="edit(adat)">Szerkesztés</button></td>
+        <!-- kitölri az adott sorban lévő adatokat -->
         <td class="card-columns"><button class="btn btn-outline-light" (click)="delete(adat)">Törlés</button></td>
       </tr>
     </tbody>

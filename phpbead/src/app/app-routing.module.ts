@@ -5,9 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { FormComponent } from './form/form.component';
 import { RouteguardGuard } from './routeguard.guard';
 
-const routes: Routes = [
+const routes: Routes = [ // létrehozzuk a routeokat
   {
-    path: '',
+    path: '', // alaphelyzetben a logint hozzuk be
     redirectTo: 'login',
     pathMatch: 'full'
   },
@@ -18,12 +18,12 @@ const routes: Routes = [
   {
     path: 'list',
     component: ListComponent,
-    canActivate: [RouteguardGuard]
+    canActivate: [RouteguardGuard] // alkalmazzuk a védelmet a nem bejelentkezett felhasználók ellen
   },
   {
     path: 'form',
     component: FormComponent,
-    canActivate: [RouteguardGuard]
+    canActivate: [RouteguardGuard]// itt is
   }
 ];
 

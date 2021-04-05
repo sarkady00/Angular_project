@@ -2,47 +2,55 @@
   <div class="keret">
     <div class="kozepre">
 
+      <!-- Name -->
       <div class="form-group">
         <label style="font-weight: bold" for="nameinput">Name</label>
         <div class="boxkozep">
           <input type="text" class="form-control" [formControlName]="'name'" name="nameinput" id="nameinput" placeholder="Enter name" [(ngModel)]="adat.name">
         </div>
+        <!-- Ellenőrzés -->
         <div class="warning">
           <div *ngIf="editform.get('name')?.touched && editform.get('name')?.errors?.required">Name is required</div>
         </div>
       </div>
 
-
+      <!-- Status -->
       <div class="form-group">
         <label style="font-weight: bold" for="statusinput" class="mt-1">Status</label>
         <div class="boxkozep">
           <input type="text" class="form-control" [formControlName]="'status'" name="statusinput" id="statusinput" placeholder="Enter the status of the character" [(ngModel)]="adat.status">
         </div>
+        <!-- Ellenőrzés -->
         <div class="warning">
           <div *ngIf="editform.get('status')?.touched && editform.get('status')?.errors?.required">Status is required</div>
         </div>
       </div>
 
+      <!-- Species -->
       <div class="form-group">
         <label style="font-weight: bold" for="speciesinput" class="mt-1">Species</label>
         <div class="boxkozep">
           <input type="text" class="form-control" [formControlName]="'species'" name="speciesinput" id="speciesinput" placeholder="Enter the species of the character" [(ngModel)]="adat.species">
         </div>
+        <!-- Ellenőrzés -->
         <div class="warning">
           <div *ngIf="editform.get('species')?.touched && editform.get('species')?.errors?.required">Species is required</div>
         </div>
       </div>
 
+      <!-- Gender -->
       <div class="form-group">
         <label style="font-weight: bold" for="genderinput" class="my-1">Gender</label>
         <div class="boxkozep">
           <input type="text" class="form-control" [formControlName]="'gender'" name="genderinput" id="genderinput" placeholder="Gender of the character" [(ngModel)]="adat.gender">
         </div>
+        <!-- Ellenőrzés -->
         <div class="warning">
           <div *ngIf="editform.get('gender')?.touched && editform.get('gender')?.errors?.required">Gender is required</div>
         </div>
       </div>
 
+      <!-- Submit gomb -->
       <button type="submit" class="btn btn-danger my-2" [disabled]="!editform.valid" (click)="save()">Submit</button>
 
     </div>

@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(public service: BeadservService) {
   }
 
-  logout(): void{
+  logout(): void{ // kijelentkezteti a felhasználót
     this.service.isLogged = false;
   }
 }

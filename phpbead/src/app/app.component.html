@@ -1,8 +1,8 @@
 <div class="jobb">
-  <button style="margin-right: 5px" class="btn btn-dark" routerLink="list"> List </button>
-  <button style="margin-right: 5px" class="btn btn-dark" routerLink="form"> Form </button>
-  <button class="btn btn-danger" routerLink="login" *ngIf="!service.isLogged"> Login </button>
-  <button class="btn btn-danger" routerLink="login" (click)="logout()" *ngIf="service.isLogged"> Log out </button>
+  <button style="margin-right: 5px" class="btn btn-dark" routerLink="list"> List </button> <!-- Ha van engedálye (be van jelentkezve) akkor átviszi a kilistázó oldalra-->
+  <button style="margin-right: 5px" class="btn btn-dark" routerLink="form"> Form </button> <!-- Ha van engedálye (be van jelentkezve) akkor átviszi a create/update oldalra-->
+  <button class="btn btn-danger" routerLink="login" *ngIf="!service.isLogged"> Login </button> <!-- Visszavisz a login oldalra -->
+  <button class="btn btn-danger" routerLink="login" (click)="logout()" *ngIf="service.isLogged"> Log out </button> <!-- Ha megnyomja a felhasználó akkor kijelentkezik és visszadobja a login page-re-->
 </div>
 
 <div class="container align-content-center">

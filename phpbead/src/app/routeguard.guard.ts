@@ -16,10 +16,10 @@ export class RouteguardGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (this.service.isLogged){
+    if (this.service.isLogged){ // ha be van lépve akkor engedi tovább menni
       return true;
     }
-    else{
+    else{ // ha nincs akkor átirányítja a loinra és nem engedi be máshova
       this.route.navigate(['/login']);
       return false;
     }
