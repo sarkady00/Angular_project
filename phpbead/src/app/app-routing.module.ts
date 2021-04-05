@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {ListComponent} from './list/list.component';
 import {LoginComponent} from './login/login.component';
 import {FormComponent} from './form/form.component';
+import {RouteguardGuard} from './routeguard.guard';
 
 const routes: Routes = [
   {
@@ -17,11 +18,12 @@ const routes: Routes = [
   {
     path: 'list',
     component: ListComponent,
+    canActivate: [RouteguardGuard]
   },
   {
     path: 'form',
     component: FormComponent,
-    canActivate:
+    canActivate: [RouteguardGuard]
   }
 ];
 
