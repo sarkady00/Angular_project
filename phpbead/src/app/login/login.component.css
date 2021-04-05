@@ -1,0 +1,24 @@
+input{
+  width: 20%;
+  text-align: center;
+}
+
+.kozepre{
+  margin-top: 1%;
+  text-align: center;
+}
+
+.boxkozep{
+  display:flex;
+  justify-content: center;
+}
+
+.warning{
+  color:red;
+  margin: 2px
+}
+
+.keret{
+  margin-top: 38px !important;
+  border-top: 1px solid black;
+}
