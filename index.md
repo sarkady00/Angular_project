@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## Welcome to my Angular Project
 
-You can use the [editor on GitHub](https://github.com/sarkady00/Angular_project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Here you can get the full project [https://github.com/sarkady00/Angular_project]
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Good to know
 
-### Markdown
+To log in you need to use the default login name (asdasd) and password (1234). Without it you can't go further than the login page and the program won't let you in.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Short describe
 
-```markdown
-Syntax highlighted code block
+The login page won't let you in until you typed the username and password correctly and you will get some alert. If you loggeed in successfully you will be on the list page, where you can see some Rick and Morty character's details like name, status, species and gender. You can delete them by clicking on the "Törlés" button or you can edit them by clicking on the "Szerkesztés" button. This will bring you to the form page and load the character's information for you that you have choose for editing. You can't leave blank boxes, everyone of them are required to be filled. If you have filled them correctly clicking on the submit button will update the data. You also can add new characters to the list by choose the form button on the top right corner. There you need to fill out all the boxes correctly and click on the submit, and after you have been brought back to the list page you can see your newly added data at the end of the list.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Developers information
+Name: Sarkadi Balázs Róbert
+Study: PTE-TTK Physics BSc, Pécs, Hungary
+Neptun kód: XCYSWG
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sarkady00/Angular_project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Api source
+["https://rickandmortyapi.com/api/character"]
