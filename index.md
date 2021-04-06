@@ -12,9 +12,9 @@ The login page won't let you in until you typed the username and password correc
 
 
 ### Developers information
-Name: Sarkadi Balázs Róbert
-Study: PTE-TTK Physics BSc, Pécs, Hungary
-Neptun kód: XCYSWG
+-Name: Sarkadi Balázs Róbert
+-Study: PTE-TTK Physics BSc, Pécs, Hungary
+-Neptun kód: XCYSWG
 
 ### Api source
 ["https://rickandmortyapi.com/api/character"]
